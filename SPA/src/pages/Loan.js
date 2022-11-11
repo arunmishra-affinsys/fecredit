@@ -16,7 +16,9 @@ export default function ProductsPage() {
       </Helmet>
 
       <Container>
-        <Typography variant="h4" sx={{ mb: 5 }}></Typography>
+        <Typography variant="h4" sx={{ mb: 5 }}>
+          Loan
+        </Typography>
 
         <LoanList products={LOAN} />
       </Container>

@@ -61,10 +61,10 @@ const DebitCardBox = ({ product }) => {
 export const DebitCard = ({ products }) => {
   return (
     <Grid container spacing={3}>
-      {products?.map((product) => (
+      {products?.map((product, index) => (
         <Grid
           item
-          key={product.code}
+          key={index}
           xs={12}
           sm={12}
           md={12}

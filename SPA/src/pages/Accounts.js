@@ -17,7 +17,7 @@ export default function AccountsPage() {
 
       <Container>
         <Typography variant="h4" sx={{ mb: 5 }}>
-          Debit Card
+          Account
         </Typography>
 
         <Account products={ACCOUNT} />

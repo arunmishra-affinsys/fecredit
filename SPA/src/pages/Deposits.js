@@ -12,7 +12,7 @@ export default function DebitCardPage() {
   return (
     <>
       <Helmet>
-        <title> Dashboard: Deposits | Minimal UI </title>
+        <title> Dashboard: Deposits </title>
       </Helmet>
 
       <Container>

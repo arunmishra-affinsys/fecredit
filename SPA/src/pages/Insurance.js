@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 // @mui
-import { Container } from "@mui/material";
+import { Typography, Container } from "@mui/material";
 // components
 
 // mock
@@ -15,6 +15,9 @@ export default function ProductsPage() {
       </Helmet>
 
       <Container>
+        <Typography variant="h4" sx={{ mb: 5 }}>
+          Insurance
+        </Typography>
         <InsuranceList products={INSURANCE_DATA.DATA} />
       </Container>
     </>
