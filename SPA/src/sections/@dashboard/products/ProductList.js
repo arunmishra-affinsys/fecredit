@@ -1,20 +1,23 @@
-import PropTypes from 'prop-types';
 // @mui
-import { Grid } from '@mui/material';
-import ShopProductCard from './ProductCard';
+import { Grid } from "@mui/material";
+import ProductCard from "./ProductCard";
 
 // ----------------------------------------------------------------------
-
-ProductList.propTypes = {
-  products: PropTypes.array.isRequired,
-};
 
 export default function ProductList({ products, ...other }) {
   return (
     <Grid container spacing={3} {...other}>
       {products.map((product) => (
-        <Grid key={product.id} item xs={12} spacing={1}>
-          <ShopProductCard product={product} />
+        <Grid
+          item
+          key={product.id}
+          xs={12}
+          sm={12}
+          md={12}
+          display={"flex"}
+          justifyContent={"center"}
+        >
+          <ProductCard product={product} />
         </Grid>
       ))}
     </Grid>
