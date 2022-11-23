@@ -1,8 +1,6 @@
 import { Navigate, useRoutes } from "react-router-dom";
-// layouts
 import DashboardLayout from "./layouts/dashboard";
 import SimpleLayout from "./layouts/simple";
-import BlogPage from "./pages/BlogPage";
 import LoginPage from "./pages/LoginPage";
 import Page404 from "./pages/Page404";
 import CreditCards from "./pages/CreditCards";
@@ -14,13 +12,8 @@ import Loan from "./pages/Loan";
 import { CardDetails } from "./sections/@dashboard/products/CardDetails";
 import Deposits from "./pages/Deposits";
 
-// ----------------------------------------------------------------------
 export default function Router() {
   const routes = useRoutes([
-    {
-      path: "/",
-      element: <BlogPage />,
-    },
     {
       path: "/dashboard",
       element: <DashboardLayout />,
